@@ -13,9 +13,6 @@ window.addEventListener('load', () => {
     });
 });
 
-document.getElementById("song-btn").addEventListener("click", () => {
-    window.open("https://open.spotify.com/track/7JXZq0JgG2zTrSOAgY8VMC?si=36a913f1e66040ea", "_blank");
-});
 
 document.getElementById("profile-btn").addEventListener("click", () => {
     window.open("https://open.spotify.com/user/xcm3zr7hdiyjh2cy3867l9o3m?si=ff75e52ab98b43a7", "_blank");
