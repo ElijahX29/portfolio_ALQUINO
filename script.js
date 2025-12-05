@@ -19,5 +19,5 @@ window.addEventListener('load', () => {
 
 // NEW BUTTON REDIRECT FEATURE
 document.getElementById("website-btn").addEventListener("click", () => {
-    window.open("YOUR_WEBSITE_LINK_HERE", "_blank"); 
+    window.open("https://elijahx29.github.io/Alquino_CSS/", "_blank"); 
 });
