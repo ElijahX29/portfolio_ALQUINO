@@ -3,7 +3,6 @@ const body = document.body;
 
 toggleButton.addEventListener('click', () => {
     body.classList.toggle('dark');
-    body.classList.toggle('red');
 });
 
 const fadeElements = document.querySelectorAll('section, header');
@@ -17,7 +16,14 @@ window.addEventListener('load', () => {
     });
 });
 
-// NEW BUTTON REDIRECT FEATURE
+document.getElementById("song-btn").addEventListener("click", () => {
+    window.open("https://open.spotify.com/track/3ZCTVFBt2Brf31RLEnCkWJ", "_blank");
+});
+
+document.getElementById("profile-btn").addEventListener("click", () => {
+    window.open("https://open.spotify.com/user/YOUR-USER-ID-HERE", "_blank");
+});
+
 document.getElementById("website-btn").addEventListener("click", () => {
-    window.open("https://elijahx29.github.io/Alquino_CSS/", "_blank"); 
+    window.open("https://elijahx29.github.io/Alquino_CSS/", "_blank");
 });
