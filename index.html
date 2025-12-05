@@ -1,66 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elijah Alquino Portfolio</title>
-  <style>
-    body {
-      font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", "Kristen ITC", "Trebuchet MS", "Verdana", sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      margin: 0;
-      padding: 20px;
-    }
-    header { text-align: center; margin-bottom: 30px; }
-    #profile-img { width: 150px; border-radius: 50%; }
-    button {
-      padding: 10px 20px;
-      margin-top: 10px;
-      cursor: pointer;
-      border-radius: 50%;
-    }
-    #song-btn, #profile-btn, #website-btn {
-      padding: 12px 18px;
-      border-radius: 20px;
-      border: none;
-      cursor: pointer;
-      font-size: 15px;
-      margin-top: 12px;
-    }
-    #song-btn { background-color: #1db954; color: white; }
-    #song-btn:hover { transform: scale(1.05); }
-    #profile-btn { background-color: #1db954; color: white; }
-    #profile-btn:hover { transform: scale(1.05); }
-    #website-btn { background-color: #444; color: white; }
-    #website-btn:hover { background-color: #222; transform: scale(1.1); }
-    #website-link {
-      display: inline-block;
-      margin-left: 12px;
-      color: #1a73e8;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    #website-link:hover { text-decoration: underline; }
-    body.dark { background-color: #121212; color: #f5f5f5; }
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-    .fade-in.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    @media screen and (max-width: 480px) {
-      body { padding: 12px; }
-      #profile-img { width: 120px; }
-      #song-btn, #profile-btn, #website-btn { width: 100%; box-sizing: border-box; }
-      #website-link { display: block; margin: 10px 0 0 0; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>ELIJAH ALQUINO</h1>
-    <img src="profpic.PNG" alt="Profile
+    <img src="profpic.PNG" alt="Profile Picture" id="profile-img">
+    <p>BS-IS - 2nd YEAR</p>
+    <button id="theme-toggle">Switch Theme</button>
+  </header>
+
+  <section id="achievements">
+    <h2>Achievements/Certifications</h2>
+    <ul>
+      <li>HighSchool Graduate in Precious International School of Davao</li>
+      <li>Seniorhigh Graduate in Mapua Malayan Colleges</li>
+      <li>Certiport Qualifier</li>
+      <li>Coursera Certificates</li>
+      <li>Codechum Java c# and c++ Passer</li>
+    </ul>
+
+    <h3>Personal Hobbies</h3>
+    <ul>
+      <li>Part time DJ</li>
+      <li>Basketball</li>
+      <li>Coding</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Previous Projects</h2>
+    <ul>
+      <li>Inventory Management System (Java)</li>
+      <li>AutoCare PMS System (c#)</li>
+      <li>Flood Control Project</li>
+    </ul>
+
+    <div class="buttons">
+      <button id="song-btn">Listen on Spotify</button>
+      <button id="profile-btn">Visit Spotify Profile</button>
+      <button id="website-btn">Visit My Website</button>
+      <a id="website-link" href="https://elijahx29.github.io/Alquino_CSS/" target="_blank">
+        elijahx29.github.io/Alquino_CSS/
+      </a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
