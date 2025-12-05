@@ -1,4 +1,3 @@
-
 const toggleButton = document.getElementById('theme-toggle');
 const body = document.body;
 
@@ -6,7 +5,6 @@ toggleButton.addEventListener('click', () => {
     body.classList.toggle('dark');
     body.classList.toggle('red');
 });
-
 
 const fadeElements = document.querySelectorAll('section, header');
 
@@ -19,8 +17,7 @@ window.addEventListener('load', () => {
     });
 });
 
-const songButton = document.getElementById('song-button');
-
-songButton.addEventListener('click', () => {
-    window.open("https://open.spotify.com/track/7JXZq0JgG2zTrSOAgY8VMC?si=f6566a3ddf964c6d", "JUNGLE");
+// NEW BUTTON REDIRECT FEATURE
+document.getElementById("website-btn").addEventListener("click", () => {
+    window.open("YOUR_WEBSITE_LINK_HERE", "_blank"); 
 });
