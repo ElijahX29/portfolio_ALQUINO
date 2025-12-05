@@ -18,7 +18,7 @@ document.getElementById("song-btn").addEventListener("click", () => {
 });
 
 document.getElementById("profile-btn").addEventListener("click", () => {
-    window.open("https://open.spotify.com/user/YOUR-USER-ID-HERE", "_blank");
+    window.open("https://open.spotify.com/user/xcm3zr7hdiyjh2cy3867l9o3m?si=ff75e52ab98b43a7", "_blank");
 });
 
 document.getElementById("website-btn").addEventListener("click", () => {
