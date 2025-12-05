@@ -6,11 +6,33 @@ body {
   padding: 20px;
 }
 
-header { text-align: center; margin-bottom: 30px; }
-#profile-img { width: 150px; border-radius: 50%; }
-button { padding: 10px 20px; margin-top: 10px; cursor: pointer; border-radius: 50%; }
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-#song-btn {
+#profile-img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+#song-btn, #profile-btn {
   padding: 12px 18px;
   border-radius: 20px;
   background-color: #1db954;
@@ -19,6 +41,57 @@ button { padding: 10px 20px; margin-top: 10px; cursor: pointer; border-radius: 5
   cursor: pointer;
   font-size: 15px;
 }
-#song-btn:hover { transform: scale(1.05); }
 
-body.dark { background-color: #121212; color: #f5f5f5; }
+#song-btn:hover, #profile-btn:hover {
+  transform: scale(1.05);
+}
+
+#website-btn {
+  padding: 12px 18px;
+  border-radius: 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#website-btn:hover {
+  background-color: #222;
+  transform: scale(1.1);
+}
+
+#website-link {
+  display: inline-block;
+  margin-left: 12px;
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#website-link:hover {
+  text-decoration: underline;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 480px) {
+  body { padding: 12px; }
+  #profile-img { width: 120px; }
+  .buttons { flex-direction: column; gap: 10px; }
+  #website-link { display: block; margin: 10px 0 0 0; }
+}
