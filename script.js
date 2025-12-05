@@ -18,3 +18,9 @@ window.addEventListener('load', () => {
         }, 150);
     });
 });
+
+const songButton = document.getElementById('song-button');
+
+songButton.addEventListener('click', () => {
+    window.open("https://open.spotify.com/track/your-favorite-song", "_blank");
+});
