@@ -43,8 +43,8 @@ ul li {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #d3d3d3; /* light gray cards */
-  border: 1px solid #000000; /* thin black edges */
+  background-color: #d3d3d3;
+  border: 1px solid #000000;
   color: #000000;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
