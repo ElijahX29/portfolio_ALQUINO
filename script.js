@@ -5,7 +5,7 @@ const boxes = document.querySelectorAll('.box-section');
 let theme = 'navy';
 
 toggleButton.addEventListener('click', () => {
-  if(theme === 'navy'){
+  if (theme === 'navy') {
     body.style.backgroundColor = '#333333';
     body.style.color = '#ffffff';
     boxes.forEach(box => {
