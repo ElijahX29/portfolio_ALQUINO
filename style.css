@@ -22,7 +22,7 @@ header {
   display: block;
 }
 
-h1, h2, h3, p {
+h1, h2, p {
   margin: 10px 0;
 }
 
@@ -32,7 +32,7 @@ ul {
 }
 
 ul li {
-  margin: 6px 0;
+  margin: 8px 0;
 }
 
 .box-section {
@@ -42,7 +42,6 @@ ul li {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   background-color: #d3d3d3;
   border: 1px solid #000000;
   color: #000000;
@@ -65,7 +64,7 @@ button {
   border: none;
   cursor: pointer;
   font-size: 15px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .buttons {
