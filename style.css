@@ -58,6 +58,11 @@ ul li {
   color: #1a1a1a;
 }
 
+.project-link::after {
+  content: " ↗";
+  font-weight: bold;
+}
+
 button {
   padding: 12px 22px;
   border-radius: 25px;
